@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.ColorPicker?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
-
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
 <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reversi.gui.settings.SettingsController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" />
@@ -112,7 +103,11 @@
                   <ToggleGroup fx:id="firstPlayerToken" />
                </toggleGroup>
             </RadioButton>
-                <ColorPicker fx:id="colorPlayerOne" prefHeight="34.0" prefWidth="114.0" />
+                <ColorPicker fx:id="colorPlayerOne" prefHeight="34.0" prefWidth="114.0">
+                <value>
+                    <Color/>
+                </value>
+                </ColorPicker>
             <RadioButton fx:id="playerOnePictureOpt" mnemonicParsing="false" onAction="#firstPlayerNoColor" toggleGroup="$firstPlayerToken">
                <HBox.margin>
                   <Insets left="10.0" />

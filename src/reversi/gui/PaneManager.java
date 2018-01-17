@@ -17,7 +17,7 @@ import javafx.scene.layout.Pane;
 import java.net.URL;
 
 public class PaneManager {
-    private static final String PANES_DIRECTORY = "containers/";
+    private static final String PANES_DIRECTORY = "resources/panes/";
     private static PaneManager paneManager;
     private PaneManager() {
     }

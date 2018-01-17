@@ -68,17 +68,29 @@
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </Label>
-            <BorderPane fx:id="winnerPane" prefHeight="120.0" prefWidth="120.0" />
+            <BorderPane fx:id="winnerPane" prefHeight="120.0" prefWidth="120.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding></BorderPane>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="32.0" prefHeight="20.0" prefWidth="120.0" spacing="5.0">
                <children>
-                  <Label text="current player">
+                  <Label text="current player:">
                      <font>
                         <Font name="System Bold" size="10.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
                   </Label>
-                  <BorderPane fx:id="currentPlayerColorPane" prefHeight="20.0" prefWidth="20.0" />
+                  <BorderPane fx:id="currentPlayerColorPane" prefHeight="45.0" prefWidth="45.0" />
                </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </HBox>
          </children>
       </VBox>

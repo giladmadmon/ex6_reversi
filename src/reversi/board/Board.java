@@ -24,17 +24,11 @@ public class Board extends GridPane implements MoveNotifier {
     private int cellHeight, cellWidth;
     private int size;
     private PlayerKind board[][];
-    private Player firstPlayer;
-    private Player secondPlayer;
-    private Player noPlayer;
     private List<MoveListener> moveListeners;
-    private List<Position> possibleMoves;
     /**
-     * @param size         board size
-     * @param firstPlayer
-     * @param secondPlayer
+     * @param size board size
      */
-    public Board(int size, Player firstPlayer, Player secondPlayer, Player noPlayer) {
+    public Board(int size) {
         MoveNotifier moveNotifier = this;
 
         this.size = size;
@@ -42,9 +36,6 @@ public class Board extends GridPane implements MoveNotifier {
         this.cellWidth = -1;
         this.board = new PlayerKind[size][size];
         moveListeners = new ArrayList<>();
-        this.firstPlayer = firstPlayer;
-        this.secondPlayer = secondPlayer;
-        this.noPlayer = noPlayer;
 
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
@@ -60,29 +51,26 @@ public class Board extends GridPane implements MoveNotifier {
     /**
      * returns the player node needed to put at a specific position
      *
-     * @param row the row of the node
-     * @param col the column of the node
+     * @param row           the row of the node
+     * @param col           the column of the node
+     * @param possibleMoves the possible moves of the player
+     * @param posPlayer     the token to draw in a possible position
      * @return the node needed to put at a specific position, null if it is not needed.
      */
-    private Node getPlayerNode(int row, int col) {
-        Node node = null;
+    private Node getPlayerNode(int row, int col, Player firstPlayer, Player secondPlayer, List<Position> possibleMoves,
+                               Player posPlayer) {
         switch (this.getColorAtPosition(row, col)) {
             case First:
-                node = firstPlayer.getNode(cellWidth, cellHeight);
-                break;
+                return firstPlayer.getNode(cellWidth, cellHeight);
             case Second:
-                node = secondPlayer.getNode(cellWidth, cellHeight);
-                break;
+                return secondPlayer.getNode(cellWidth, cellHeight);
             case None:
                 for (Position position : possibleMoves) {
-                    if (position.getRow() == row && position.getColumn() == col) {
-                        node = noPlayer.getNode(cellWidth, cellHeight);
-                        break;
-                    }
+                    if (position.getColumn() == col && position.getRow() == row)
+                        return posPlayer.getNode(cellWidth, cellHeight);
                 }
-                break;
         }
-        return node;
+        return null;
     }
     /**
      * reset the board o the starting opening set up.
@@ -148,7 +136,7 @@ public class Board extends GridPane implements MoveNotifier {
     /**
      * draw the board.
      */
-    public void draw() {
+    public void draw(Player firstPlayer, Player secondPlayer, List<Position> possibleMoves, Player posPlayer) {
         this.getChildren().clear();
         this.setGridLinesVisible(false);
         this.setGridLinesVisible(true);
@@ -162,7 +150,7 @@ public class Board extends GridPane implements MoveNotifier {
         for (int i = 0; i < this.getSize(); i++) {
             for (int j = 0; j < this.getSize(); j++) {
                 int row = i + 1, col = j + 1;
-                Node node = getPlayerNode(row, col);
+                Node node = getPlayerNode(row, col, firstPlayer, secondPlayer, possibleMoves, posPlayer);
 
                 BorderPane borderPane = new BorderPane();
                 borderPane.setMinSize(cellWidth, cellHeight);
@@ -186,12 +174,6 @@ public class Board extends GridPane implements MoveNotifier {
     @Override
     public void removeMoveListener(MoveListener moveListener) {
         moveListeners.remove(moveListener);
-    }
-    /**
-     * @param possibleMoves sets the current possible moves in order to draw them.
-     */
-    public void setPossibleMoves(List<Position> possibleMoves) {
-        this.possibleMoves = possibleMoves;
     }
 }
 

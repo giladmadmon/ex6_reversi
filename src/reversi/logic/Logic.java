@@ -4,12 +4,14 @@ package reversi.logic;
  * Student name: Dafna Magid
  * Exercise name: Exercise 6
  **************/
+
 import reversi.board.Board;
 import reversi.board.Position;
 import reversi.player.PlayerKind;
 
 import java.util.ArrayList;
 
+import static reversi.player.PlayerKind.First;
 import static reversi.player.PlayerKind.None;
 
 /**
@@ -18,11 +20,13 @@ import static reversi.player.PlayerKind.None;
  */
 public abstract class Logic {
     private PlayerKind currentTurn;
+    protected PlayerKind startingPlayer;
     /**
      * Constructor.
      */
     Logic() {
         currentTurn = None;
+        startingPlayer = First;
     }
     /**
      * @return the color of the player whom is his current turn.
@@ -33,8 +37,15 @@ public abstract class Logic {
     /**
      * @return the color of the starting player.
      */
-    public abstract PlayerKind startingPlayer();
-
+    public PlayerKind getStartingPlayer() {
+        return startingPlayer;
+    }
+    /**
+     * change the starting player.
+     */
+    public void setStartingPlayer(PlayerKind newStartingPlayer) {
+        startingPlayer = newStartingPlayer;
+    }
     /**
      * @param board the board of the game.
      * @return the winner based on the board state.

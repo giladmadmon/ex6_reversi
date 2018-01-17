@@ -106,8 +106,8 @@ public class Settings {
     /**
      * @return the starting player written in the file.
      */
-    public int getStartingPlayer() {
-        return Integer.parseInt(configs.get(STARTING_PLAYER_DEF));
+    public PlayerKind getStartingPlayer() {
+        return checkBlackOrWhite(configs.get(STARTING_PLAYER_DEF));
     }
     /**
      * @return the first player color written in the file.
@@ -128,16 +128,15 @@ public class Settings {
     /**
      * @return the kind of player written in a string.
      */
-    private PlayerKind checkBlackOrWhite(String color) {
-        if (configs.get(STARTING_PLAYER_DEF) == "BLACK") {
-            return PlayerKind.First;
+    private PlayerKind checkBlackOrWhite(String player) {
+        switch (player){
+            case "1":
+                return PlayerKind.First;
+            case "2":
+                return PlayerKind.Second;
+            default:
+                return PlayerKind.None;
         }
-
-        if (configs.get(STARTING_PLAYER_DEF) == "WHITE") {
-            return PlayerKind.Second;
-        }
-
-        return PlayerKind.None;
     }
     /**
      * @return the kind of color written in a string.

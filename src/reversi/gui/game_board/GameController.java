@@ -61,31 +61,42 @@ public class GameController implements Initializable, MoveListener {
      */
     @FXML
     public void initialize(URL location, ResourceBundle resources) {
-        Settings settings = new Settings();
-        logic = new ClassicLogic();
+        Settings settings = new reversi.gui.settings.Settings();
         printer = new GuiPrinter();
 
-        if (settings.containDefinition(Settings.COLOR_1_DEF))
+        logic = new ClassicLogic();
+        logic.setStartingPlayer(settings.getStartingPlayer());
+
+        // sets the first player token
+        if (settings.containDefinition(Settings.COLOR_1_DEF)) {
             firstPlayer = new Player(settings.getFirstColor());
-        else
+        } else {
             firstPlayer = new Player(settings.getFirstPicture());
+        }
 
-        if (settings.containDefinition(Settings.COLOR_2_DEF))
+        // sets the second player token
+        if (settings.containDefinition(Settings.COLOR_2_DEF)) {
             secondPlayer = new Player(settings.getSecondColor());
-        else
+        } else {
             secondPlayer = new Player(settings.getSecondPicture());
+        }
 
+        // default empty circle
         noPlayer = new Player(Color.TRANSPARENT);
-        board = new Board(settings.getBoardSize(), firstPlayer, secondPlayer, noPlayer);
+
+        // sets the board properties
+        board = new Board(settings.getBoardSize());
         board.setPrefHeight(root.getPrefHeight() - HEIGHT_PADDING);
         board.setPrefWidth(root.getPrefWidth() - WIDTH_PADDING - SIDE_PANEL_WIDTH);
         board.addMoveListener(this);
         root.add(board, 0, 0, 1, 2);
+
+        // handle window resize
         root.widthProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 board.setPrefWidth(newValue.doubleValue() - WIDTH_PADDING - SIDE_PANEL_WIDTH);
-                board.draw();
+                board.draw(firstPlayer, secondPlayer, possibleMoves, noPlayer);
             }
         });
 
@@ -93,16 +104,18 @@ public class GameController implements Initializable, MoveListener {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 board.setPrefHeight(newValue.doubleValue() - HEIGHT_PADDING);
-                board.draw();
+                board.draw(firstPlayer, secondPlayer, possibleMoves, noPlayer);
             }
         });
 
+        // show the first and second player tokens
         firstPlayerColorPane.setCenter(
                 firstPlayer.getNode(firstPlayerColorPane.getPrefWidth(), firstPlayerColorPane.getPrefHeight()));
 
         secondPlayerColorPane.setCenter(
                 secondPlayer.getNode(secondPlayerColorPane.getPrefWidth(), secondPlayerColorPane.getPrefHeight()));
 
+        // initialize the game
         nextTurn(true);
     }
     /**
@@ -168,8 +181,7 @@ public class GameController implements Initializable, MoveListener {
 
         // update possible moves
         possibleMoves = logic.possibleMoves(logic.currentTurn(), board);
-        board.setPossibleMoves(possibleMoves);
-        board.draw();
+        board.draw(firstPlayer, secondPlayer, possibleMoves, noPlayer);
     }
     /**
      * 'Node factory'

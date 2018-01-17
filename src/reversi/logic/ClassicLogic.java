@@ -19,12 +19,6 @@ public class ClassicLogic extends Logic {
      */
     public ClassicLogic() { }
     /**
-     * @return the color of the starting player.
-     */
-    public PlayerKind startingPlayer() {
-        return First;
-    }
-    /**
      * @param board the board of the game.
      * @return the winner based on the board state.
      */
@@ -51,7 +45,7 @@ public class ClassicLogic extends Logic {
         }
 
         if (newGame) {
-            setCurrentTurn(First);
+            setCurrentTurn(getStartingPlayer());
             return getCurrentTurn();
         }
 

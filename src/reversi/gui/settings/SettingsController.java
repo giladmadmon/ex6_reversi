@@ -8,18 +8,15 @@ package reversi.gui.settings;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import reversi.gui.PaneManager;
+import reversi.player.PlayerKind;
+import reversi.printer.GuiPrinter;
+import reversi.printer.Printer;
 
 import java.net.URL;
 import java.util.Map;
@@ -27,6 +24,9 @@ import java.util.ResourceBundle;
 import java.util.TreeMap;
 
 public class SettingsController implements Initializable {
+    private static final String PLAYER_PICTURES_DIRECTORY = "pictures/players/";
+    private static final String DEFAULT_FIRST_PLAYER_IMAGE = "img1.png";
+    private static final String DEFAULT_SECOND_PLAYER_IMAGE = "img2.png";
     private Settings settings;
     @FXML
     private ChoiceBox boardSize;
@@ -51,6 +51,7 @@ public class SettingsController implements Initializable {
     @FXML
     private RadioButton playerTwoPictureOpt;
     private Map<String, Image> playerImgs;
+    private Printer printer;
     /**
      * Initialize the settings.
      *
@@ -60,19 +61,20 @@ public class SettingsController implements Initializable {
     @FXML
     public void initialize(URL location, ResourceBundle resources) {
         settings = new Settings();
+        printer = new GuiPrinter();
 
-        // cache all the player images once
+        // load all the player images
         playerImgs = new TreeMap<>();
         for (String playerImg : playerOnePicture.getItems()) {
             playerImgs.put(playerImg, new Image(
-                    getClass().getClassLoader().getResource("pictures/players/" + playerImg).toString()));
+                    getClass().getClassLoader().getResource(PLAYER_PICTURES_DIRECTORY + playerImg).toString()));
         }
 
         // change the board size
         boardSize.getSelectionModel().select(Integer.toString(settings.getBoardSize()));
 
         // change the starting player
-        if (settings.getStartingPlayer() == 1) {
+        if (settings.getStartingPlayer() == PlayerKind.First) {
             startPlayerOne.setSelected(true);
         } else {
             startPlayerTwo.setSelected(true);
@@ -87,7 +89,7 @@ public class SettingsController implements Initializable {
             colorPlayerOne.setValue(settings.getFirstColor());
             playerOneColorOpt.setSelected(true);
             firstPlayerNoImage();
-            playerOnePicture.setValue("img1.png");
+            playerOnePicture.setValue(DEFAULT_FIRST_PLAYER_IMAGE);
         } else {
             playerOnePicture.setValue(settings.getFirstPicture());
             playerOnePictureOpt.setSelected(true);
@@ -99,7 +101,7 @@ public class SettingsController implements Initializable {
             colorPlayerTwo.setValue(settings.getSecondColor());
             playerTwoColorOpt.setSelected(true);
             secondPlayerNoImage();
-            playerTwoPicture.setValue("img2.png");
+            playerTwoPicture.setValue(DEFAULT_SECOND_PLAYER_IMAGE);
         } else {
             playerTwoPicture.setValue(settings.getSecondPicture());
             playerTwoPictureOpt.setSelected(true);
@@ -112,21 +114,36 @@ public class SettingsController implements Initializable {
      */
     @FXML
     private void backToMenu() {
-        updateSettings();
+        if (updateSettings()) {
 
-        try {
-            PaneManager paneManager = PaneManager.getInstance();
-            Scene scene = new Scene(paneManager.getMainMenu(), boardSize.getScene().getWidth(),
-                                    boardSize.getScene().getHeight());
-            ((Stage) boardSize.getScene().getWindow()).setScene(scene);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            try {
+                PaneManager paneManager = PaneManager.getInstance();
+                Scene scene = new Scene(paneManager.getMainMenu(), boardSize.getScene().getWidth(),
+                                        boardSize.getScene().getHeight());
+                ((Stage) boardSize.getScene().getWindow()).setScene(scene);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
     /**
      * update the current settings.
      */
-    private void updateSettings() {
+    private boolean updateSettings() {
+        if (playerOneColorOpt.selectedProperty().get() && playerTwoColorOpt.selectedProperty().get()) {
+            if (colorPlayerOne.getValue().equals(colorPlayerTwo.getValue())) {
+                printer.printSameTokens();
+                return false;
+            }
+        }
+
+        if (playerOnePictureOpt.selectedProperty().get() && playerTwoPictureOpt.selectedProperty().get()) {
+            if (playerOnePicture.getValue().equals(playerTwoPicture.getValue())) {
+                printer.printSameTokens();
+                return false;
+            }
+        }
+
         // board size
         settings.setDefinition(Settings.BOARD_SIZE_DEF, boardSize.getValue().toString());
 
@@ -156,6 +173,7 @@ public class SettingsController implements Initializable {
         }
 
         settings.saveSettings();
+        return true;
     }
     /**
      * defines the cell in the combo box to show the image.

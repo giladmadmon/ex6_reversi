@@ -9,6 +9,11 @@ import reversi.player.PlayerKind;
 
 public interface Printer {
     /**
+     * Print that the players can not have the same token.
+     */
+    void printSameTokens();
+
+    /**
      * Print that there are no moves.
      *
      * @param playerKind the color of the player whom has bo moves.

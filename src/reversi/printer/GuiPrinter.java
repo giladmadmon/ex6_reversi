@@ -22,4 +22,8 @@ public class GuiPrinter implements Printer {
             new Alert(Alert.AlertType.NONE, "The winner is the " + playerKind + " " + "player!!", ButtonType.OK).show();
         }
     }
+    @Override
+    public void printSameTokens() {
+        new Alert(Alert.AlertType.NONE, "There has to be a difference between the players!", ButtonType.OK).show();
+    }
 }
