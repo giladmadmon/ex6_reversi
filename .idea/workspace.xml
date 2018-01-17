@@ -10,92 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55985223-eb4f-423e-8940-966a911637c8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/containers/game.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/containers/mainMenu.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/containers/settings.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/backgrounds/game.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/img9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/imgBLACK.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/BIGANDOLDimg/imgWHITE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/imgBLACK.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/6/resources/pictures/players/imgWHITE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/containers/game.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/containers/mainMenu.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/containers/settings.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/backgrounds/game.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/img9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/imgBLACK.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/BIGANDOLDimg/imgWHITE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/imgBLACK.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/pictures/players/imgWHITE.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/board/Board$1.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/board/Board$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/board/Board$2.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/board/Board$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/board/Board.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/board/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/PaneManager.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/PaneManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$1.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$2.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$3.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/game_board/GameController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/Settings.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/Settings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController$1.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController$2.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/gui/settings/SettingsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/logic/ClassicLogic.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/logic/ClassicLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/logic/Logic.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/logic/Logic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/printer/GuiPrinter.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/printer/GuiPrinter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/6/reversi/printer/Printer.class" afterPath="$PROJECT_DIR$/out/production/6/reversi/printer/Printer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ini" afterPath="$PROJECT_DIR$/config.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/board/Board.java" afterPath="$PROJECT_DIR$/src/reversi/board/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/gui/PaneManager.java" afterPath="$PROJECT_DIR$/src/reversi/gui/PaneManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/gui/game_board/GameController.java" afterPath="$PROJECT_DIR$/src/reversi/gui/game_board/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/gui/settings/Settings.java" afterPath="$PROJECT_DIR$/src/reversi/gui/settings/Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/gui/settings/SettingsController.java" afterPath="$PROJECT_DIR$/src/reversi/gui/settings/SettingsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/logic/ClassicLogic.java" afterPath="$PROJECT_DIR$/src/reversi/logic/ClassicLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/logic/Logic.java" afterPath="$PROJECT_DIR$/src/reversi/logic/Logic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java" afterPath="$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reversi/printer/Printer.java" afterPath="$PROJECT_DIR$/src/reversi/printer/Printer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,12 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuiPrinter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GuiPrinter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="751">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,14 +86,14 @@
       <file leaf-file-name="Printer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reversi/printer/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reversi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
@@ -276,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/reversi/MoveNotifier.java" />
         <option value="$PROJECT_DIR$/src/reversi/MoveListener.java" />
         <option value="$PROJECT_DIR$/src/reversi/printer/Printer.java" />
-        <option value="$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java" />
         <option value="$PROJECT_DIR$/src/reversi/gui/gameBoard/GameController.java" />
         <option value="$PROJECT_DIR$/src/reversi/logic/ClassicLogic.java" />
         <option value="$PROJECT_DIR$/src/reversi/gui/Settings/Settings.java" />
@@ -284,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/reversi/gui/settings/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/reversi/board/Board.java" />
         <option value="$PROJECT_DIR$/src/reversi/gui/game_board/GameController.java" />
+        <option value="$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java" />
       </list>
     </option>
   </component>
@@ -364,6 +287,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reversi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reversi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="printer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -783,6 +728,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -800,7 +746,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25351351" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25351351" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1086,27 +1032,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/reversi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="78">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reversi/printer/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="234">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reversi/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/reversi/printer/GuiPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="751">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

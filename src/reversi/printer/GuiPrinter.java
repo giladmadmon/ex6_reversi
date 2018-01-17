@@ -12,18 +12,21 @@ import reversi.player.PlayerKind;
 public class GuiPrinter implements Printer {
     @Override
     public void printNoMoves(PlayerKind playerKind) {
-        new Alert(Alert.AlertType.NONE, playerKind + " player has no available move.", ButtonType.OK).show();
+        showMessage(playerKind + " player has no available move.");
     }
     @Override
     public void printWinner(PlayerKind playerKind) {
         if (playerKind == PlayerKind.None) {
-            new Alert(Alert.AlertType.NONE, "It's a tie!!", ButtonType.OK).show();
+            showMessage("It's a tie!!");
         } else {
-            new Alert(Alert.AlertType.NONE, "The winner is the " + playerKind + " " + "player!!", ButtonType.OK).show();
+            showMessage("The winner is the " + playerKind + " " + "player!!");
         }
     }
     @Override
     public void printSameTokens() {
-        new Alert(Alert.AlertType.NONE, "There has to be a difference between the players!", ButtonType.OK).show();
+        showMessage("There has to be a difference between the players!");
+    }
+    private void showMessage(String msg) {
+        new Alert(Alert.AlertType.NONE, msg, ButtonType.OK).show();
     }
 }
